@@ -1,0 +1,38 @@
+Package: eqvis
+Type: Package
+Title: Provides Visualization For Earthquakes NOAA Data
+Version: 0.1.0
+Date: 2021-05-10
+Depends: R (>= 4.0.0)
+Imports: readr, 
+        magrittr,
+        tidyr, 
+        tibble, 
+        lubridate, 
+        stringr, 
+        dplyr,
+        viridis, 
+        leaflet, 
+        ggplot2, 
+        grid,
+        scales
+Author: Akbar Punjwani <akbarpunjwani@yahoo.com>
+Maintainer: Akbar Punjwani <akbarpunjwani@yahoo.com>
+Description: It provides visualization tools as Geom Extensions & Mappings.
+    Earthquakes visualization over timelines provides useful insights and when these
+    visualizations also show lables over selected earthquakes,it inspires viewers 
+    with useful insights. Both visualizations are provided as extended Geoms.
+    Earthquakes visualizations over maps showing its epicenter highlights the 
+    locations and other important data in its popup. All these 3 tools are part of 
+    this package.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/akbarpunjwani/eqvis
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
