@@ -1,0 +1,106 @@
+---
+title: "Earthquake Visualization Tools"
+description: "A meaningful explaination of all the Geometric tools & Mapping Leaflet Markers"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Earthquake Visualization Tools}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(eqvis)
+```
+```{r  global_options}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE,
+  warning = FALSE)
+```
+
+This tutorial is about EQVIS package and how it could be used.
+
+The EQVIS, which stands for EarthQuake VISualizations, provid a sample data set for public access to analyze the earthquakes occurrences as reported at NOAA. 
+
+This package includes this data for internal use only. However, this package uses that data and provides a **geometric objects** (*eq_timeline_and_labels*) and the **mapping based visual plots** (*eq_map_with_datelabels and eq_map_with_htmllabels*) for specified year.
+
+## Data Summary ##
+The NOAA Earthquakes data has a time series information of DAY, MONTH and YEAR of the earthquakes along with the spatial information of Longitude, Latitude & Location. Additionally, it also has the data of eq magnitude & total deaths. In order to load & clean data, below methods can be used:
+
+**eq_load_data(filename)**
+Since the package includes the dataset of NOAA for earthquakes, the output would be the raw data as loaded from the archived file available with public access.
+
+Examples:
+*eqvis::eq_load_data()*
+```{r}
+eqvis::eq_load_data()
+```
+
+*eqvis::eq_location_clean()*
+```{r}
+eqvis::eq_location_clean()
+```
+
+*eqvis::eq_clean_data()* (Internally loads raw data when no data is passed)
+```{r echo = TRUE, eval=TRUE, warning=TRUE}
+eqvis::eq_clean_data()
+```
+
+
+```{r  messages = FALSE, echo = FALSE, eval=TRUE, warnings=TRUE, include=TRUE, results='hide', fig.height=2, fig.width=2}
+sample <- 1:10
+```
+
+## Data Visualization ##
+The NOAA Earthquake data contains details (DATE, MAGNITUDE, TOTAL DEATHS, LOCATION) of world-wide occurrences of earthquakes. The package uses this data to visualize it into a timeline plot for each country, using the below mentioned method:
+
+**eqvis::eq_timeline()**
+
+As the package includes the dataset of NOAA earthquakes, this method helps the user to visualize the data for the selected countries, time series range & magnitude.
+In case any of the required details not provided, it provides the sample output for specific values.
+
+Examples:
+*eqvis::eq_timeline(countries = c('TURKEY','CHINA'))*
+
+```{r fig.height=5, fig.width=7}
+grid::grid.draw(eqvis::eq_timeline(countries = c('TURKEY','CHINA')))
+```
+
+**eqvis::eq_timeline_and_labels()**
+
+This method helps the user to visualize the largest earthquakes locations in addition to the time series range & magnitude.
+In case any of the parameters is not provided with values, it displays the sample with example values.
+
+Examples:
+*eqvis::eq_timeline_and_labels(countries = c('TURKEY','CHINA'))*
+
+```{r fig.height=5, fig.width=7}
+grid::grid.draw(eqvis::eq_timeline_and_labels(countries = c('TURKEY','CHINA')))
+```
+
+**eqvis::eq_map_with_datelabels()**
+
+As the package includes the dataset of NOAA earthquakes, this method helps the user to get a interactive map of earthquakes along with popup text showing date labels.
+
+Examples:
+*eqvis::eq_map_with_datelabels()*
+
+```{r fig.height=5, fig.width=7}
+eqvis::eq_map_with_datelabels()
+```
+
+**eqvis::eq_map_with_htmllabels()**
+
+When compared with eq_map_with_datelabels, this function shows the popup text having more details and formatted using HTML tags. Instead of date, the popup text shows Clean Location, Magnitude & Total Deaths.
+
+Examples:
+*eqvis::eq_map_with_htmllabels()*
+
+```{r fig.height=5, fig.width=7}
+eqvis::eq_map_with_htmllabels()
+```
