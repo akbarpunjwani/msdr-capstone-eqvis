@@ -28,7 +28,7 @@ Description: It provides visualization tools as Geom Extensions & Mappings.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/akbarpunjwani/eqvis
+URL: https://github.com/akbarpunjwani/msdr-capstone-eqvis
 RoxygenNote: 7.1.1
 Suggests: 
     knitr,

@@ -1,29 +1,36 @@
 ---
-title: "Earthquake Visualization Tools"
-description: "A meaningful explaination of all the Geometric tools & Mapping Leaflet Markers"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Earthquake Visualization Tools}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+output: github_document
+always_allow_html: true
 ---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
 )
 ```
 
-```{r setup}
+# eqvis
+
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.com/akbarpunjwani/msdr-capstone-eqvis.svg?branch=main)](https://travis-ci.com/akbarpunjwani/msdr-capstone-eqvis)
+<!-- badges: end -->
+
+The goal of EQVIS is to provide EarthQuake VISualization tools in order to analyze the earthquakes occurrences as reported at NOAA sample data set as available for public access.
+
+## Installation
+
+You can install the released version of eqvis from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+library(devtools)
+install_github("akbarpunjwani/msdr-capstone-eqvis")
 library(eqvis)
 ```
-```{r  global_options}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE,
-  warning = FALSE)
-```
-
-This tutorial is about EQVIS package and how it could be used.
 
 The EQVIS, which stands for EarthQuake VISualizations, provide a sample data set for public access to analyze the earthquakes occurrences as reported at NOAA. 
 
