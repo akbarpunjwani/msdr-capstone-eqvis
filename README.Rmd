@@ -32,7 +32,7 @@ install_github("akbarpunjwani/msdr-capstone-eqvis")
 library(eqvis)
 ```
 
-The EQVIS, which stands for EarthQuake VISualizations, provide a sample data set for public access to analyze the earthquakes occurrences as reported at NOAA. 
+The EQVIS, which stands for EarthQuake VISualizations, provide a sample data set for public access to analyze the earthquakes occurrences as reported at [NOAA](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1). 
 
 This package includes this data for internal use only. However, this package uses that data and provides a **geometric objects** (*eq_timeline_and_labels*) and the **mapping based visual plots** (*eq_map_with_datelabels and eq_map_with_htmllabels*) for specified year.
 
