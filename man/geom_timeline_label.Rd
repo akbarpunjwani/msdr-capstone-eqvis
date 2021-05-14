@@ -43,7 +43,7 @@ The main function for Geom extension that adds Earthquake labels on Timelines
 }
 \examples{
 \dontrun{
-eqvis::eq_load_data('../capstone/data/earthquakes.tsv.gz') \%>\%
+eqvis::eq_load_data() \%>\%
 eqvis::eq_clean_data() \%>\%
 dplyr::filter(COUNTRY \%in\% c("TURKEY","CHINA") & lubridate::year(DATE) >= 2000 & lubridate::year(DATE) < 2022 & EQ_MAG_MW>=0) \%>\%
 ggplot2::ggplot(mapping = aes(x=DATE, y=COUNTRY)) +

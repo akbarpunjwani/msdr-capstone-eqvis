@@ -20,7 +20,7 @@ Uses leaflet functions to map the epicenters (LATITUDE/LONGITUDE) and also to an
 each point with a pop up window.
 }
 \examples{
-eqvis::eq_load_data('../capstone/data/earthquakes.tsv.gz') \%>\%
+eqvis::eq_load_data() \%>\%
   eqvis::eq_clean_data() \%>\%
   dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
   dplyr::mutate(popup_text = eqvis::eq_create_label(.)) \%>\%
