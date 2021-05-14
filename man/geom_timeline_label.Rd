@@ -45,8 +45,9 @@ The main function for Geom extension that adds Earthquake labels on Timelines
 \dontrun{
 eqvis::eq_load_data() \%>\%
 eqvis::eq_clean_data() \%>\%
-dplyr::filter(COUNTRY \%in\% c("TURKEY","CHINA") & lubridate::year(DATE) >= 2000 & lubridate::year(DATE) < 2022 & EQ_MAG_MW>=0) \%>\%
-ggplot2::ggplot(mapping = aes(x=DATE, y=COUNTRY)) +
+dplyr::filter(COUNTRY \%in\% c("TURKEY","CHINA") & EQ_MAG_MW>=0) \%>\%
+dplyr::filter(lubridate::year(DATE)>=2000 & lubridate::year(DATE)<2022) \%>\%
+ggplot2::ggplot(mapping = ggplot2::aes(x=DATE, y=COUNTRY)) +
 eqvis::geom_timeline(ggplot2::aes(xmin=lubridate::ymd(20000101),
                           xmax=lubridate::ymd(20220101),
                           size=EQ_MAG_MW,

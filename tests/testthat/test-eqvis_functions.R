@@ -95,7 +95,7 @@ testthat::test_that("Sample results of Geom with Labels have correct attributes"
 })
 
 testthat::test_that("HTML Labels for popup text have correct shape", {
-  testthat::expect_equal(length(eqvis::eq_create_label()), dim(eqvis::eq_load_data())[1])
+  testthat::expect_equal(length(eqvis::eq_create_label(eqvis::eq_clean_data())), dim(eqvis::eq_load_data())[1])
 })
 
 testthat::test_that("Map object have correct class of Leaflet HTML Widget", {

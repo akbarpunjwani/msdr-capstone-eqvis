@@ -4,7 +4,7 @@
 \alias{eq_create_label}
 \title{Creates an HTML label that can be used as the annotation text in the leaflet map.}
 \usage{
-eq_create_label(df = NULL)
+eq_create_label(df)
 }
 \arguments{
 \item{df}{The clean data as returned from eq_clean_data}
@@ -23,6 +23,5 @@ for any of these, both the label and the value is skipped for that element of th
 eqvis::eq_load_data() \%>\%
   eqvis::eq_clean_data() \%>\%
   dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
-  dplyr::mutate(popup_text = eq_create_label(.)) \%>\%
-  dplyr::select("DATE","LATITUDE","LONGITUDE","LOCATION_NAME","TOTAL_DEATHS","EQ_PRIMARY","popup_text")
+  dplyr::mutate(popup_text = eqvis::eq_create_label(.))
 }

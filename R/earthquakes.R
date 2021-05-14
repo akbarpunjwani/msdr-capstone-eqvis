@@ -1,4 +1,8 @@
-`%>%` <- magrittr::`%>%`
+# `%>%` <- magrittr::`%>%`
+
+globalVariables(c(".", "A", "B", "COUNTRY", "DATE", "DAY", "EQ_MAG_MW", "EQ_PRIMARY", "INTENSITY", "LATITUDE",
+                  "LOCATION_NAME", "LONGITUDE", "Location", "MONTH", "TOTAL_DEATHS", "YEAR", "colour", "desc",
+                  "eq_seq", "size", "x", "xmax", "xmin", "y"))
 
 # Data Wrangling: Loading & Cleaning --------------------------------------------------------------
 
@@ -79,7 +83,6 @@ eq_load_data <- function(filename=''){
 #' @importFrom stringr str_to_title
 #' @importFrom stringr str_replace
 #' @importFrom stringr str_replace_na
-#' @importFrom magrittr "%>%"
 #'
 #' @examples
 #' eqvis::eq_location_clean()
@@ -133,7 +136,6 @@ eq_location_clean <- function(df_raw = NULL){
 #' @importFrom dplyr select
 #' @importFrom lubridate ymd
 #' @importFrom stringr str_pad
-#' @importFrom magrittr "%>%"
 #'
 #' @examples
 #' eqvis::eq_clean_data()
@@ -196,7 +198,6 @@ eq_clean_data <- function(df_raw = NULL){
 #' @importFrom tibble as_tibble
 #' @importFrom dplyr filter
 #' @importFrom dplyr select
-#' @importFrom magrittr "%>%"
 #'
 #' # No export
 #'
@@ -239,7 +240,6 @@ compute_group_timeline <- function(data, scales) {
 #' @importFrom grid gpar
 #' @importFrom grid pointsGrob
 #' @importFrom scales alpha
-#' @importFrom magrittr "%>%"
 #'
 #' # No export
 #'
@@ -327,7 +327,6 @@ StatTimeline <- ggplot2::ggproto("StatTimeline",
 #' @return Returns the ggplot2::layer Object
 #'
 #' @importFrom ggplot2 layer
-#' @importFrom magrittr "%>%"
 #'
 #' @export
 #'
@@ -401,10 +400,9 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline",
 #' @param na.rm FALSE indicates that the NA values needs to be displayed
 #' @param ... Any other parameters
 #'
-#' @return
+#' @return New ggplot2 Layer having values that refer to StatTimeline & GeomTimeline
 #'
 #' @importFrom ggplot2 layer
-#' @importFrom magrittr "%>%"
 #'
 #' @export
 #'
@@ -412,8 +410,9 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline",
 #' \dontrun{
 #' eqvis::eq_load_data() %>%
 #' eqvis::eq_clean_data() %>%
-#' dplyr::filter(COUNTRY %in% c("TURKEY","CHINA") & lubridate::year(DATE) >= 2000 & lubridate::year(DATE) < 2022 & EQ_MAG_MW>=0) %>%
-#' ggplot2::ggplot(mapping = aes(x=DATE, y=COUNTRY)) +
+#' dplyr::filter(COUNTRY %in% c("TURKEY","CHINA") & EQ_MAG_MW>=0) %>%
+#' dplyr::filter(lubridate::year(DATE)>=2000 & lubridate::year(DATE)<2022) %>%
+#' ggplot2::ggplot(mapping = ggplot2::aes(x=DATE, y=COUNTRY)) +
 #' eqvis::geom_timeline(ggplot2::aes(xmin=lubridate::ymd(20000101),
 #'                           xmax=lubridate::ymd(20220101),
 #'                           size=EQ_MAG_MW,
@@ -470,7 +469,6 @@ geom_timeline <- function(mapping = NULL,
 #' @importFrom dplyr mutate
 #' @importFrom dplyr n
 #' @importFrom dplyr select
-#' @importFrom magrittr "%>%"
 #'
 #' # No export
 #'
@@ -520,7 +518,6 @@ compute_group_timelinelabel <- function(data, scales, n_max=4) {
 #' @importFrom grid segmentsGrob
 #' @importFrom grid gpar
 #' @importFrom grid textGrob
-#' @importFrom magrittr "%>%"
 #'
 #' # No export
 #'
@@ -628,7 +625,6 @@ StatTimelineLabel <- ggplot2::ggproto("StatTimelineLabel",
 #' @return Returns the ggplot2::layer Object
 #'
 #' @importFrom ggplot2 layer
-#' @importFrom magrittr "%>%"
 #'
 #' @export
 #'
@@ -713,7 +709,6 @@ GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel",
 #' @return New ggplot2 Layer having values that refer to StatTimelineLabel & GeomTimelineLabel
 #'
 #' @importFrom ggplot2 layer
-#' @importFrom magrittr "%>%"
 #'
 #' @export
 #'
@@ -721,8 +716,9 @@ GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel",
 #' \dontrun{
 #' eqvis::eq_load_data() %>%
 #' eqvis::eq_clean_data() %>%
-#' dplyr::filter(COUNTRY %in% c("TURKEY","CHINA") & lubridate::year(DATE) >= 2000 & lubridate::year(DATE) < 2022 & EQ_MAG_MW>=0) %>%
-#' ggplot2::ggplot(mapping = aes(x=DATE, y=COUNTRY)) +
+#' dplyr::filter(COUNTRY %in% c("TURKEY","CHINA") & EQ_MAG_MW>=0) %>%
+#' dplyr::filter(lubridate::year(DATE)>=2000 & lubridate::year(DATE)<2022) %>%
+#' ggplot2::ggplot(mapping = ggplot2::aes(x=DATE, y=COUNTRY)) +
 #' eqvis::geom_timeline(ggplot2::aes(xmin=lubridate::ymd(20000101),
 #'                           xmax=lubridate::ymd(20220101),
 #'                           size=EQ_MAG_MW,
@@ -795,7 +791,6 @@ geom_timeline_label <- function(mapping = NULL,
 #'
 #' @importFrom dplyr select
 #' @importFrom dplyr mutate
-#' @importFrom magrittr "%>%"
 #'
 #' @export
 #'
@@ -803,9 +798,8 @@ geom_timeline_label <- function(mapping = NULL,
 #' eqvis::eq_load_data() %>%
 #'   eqvis::eq_clean_data() %>%
 #'   dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
-#'   dplyr::mutate(popup_text = eq_create_label(.)) %>%
-#'   dplyr::select("DATE","LATITUDE","LONGITUDE","LOCATION_NAME","TOTAL_DEATHS","EQ_PRIMARY","popup_text")
-eq_create_label <- function(df = NULL){
+#'   dplyr::mutate(popup_text = eqvis::eq_create_label(.))
+eq_create_label <- function(df){
   if (is.null(df))
     df <- eqvis::eq_clean_data()
 
@@ -849,7 +843,6 @@ eq_create_label <- function(df = NULL){
 #' @importFrom leaflet addTiles
 #' @importFrom leaflet addCircleMarkers
 #' @importFrom viridis viridis
-#' @importFrom magrittr "%>%"
 #'
 #' @export
 #'
@@ -925,9 +918,12 @@ eq_timeline <- function(countries = c("TURKEY","CHINA"),
 #' Plots the Timelines and the popup text for earthquakes largest in size
 #'
 #' @param countries Character vectors of country names
+#' @param minyear Integer Year of timeline start
+#' @param maxyear Integer Year of timeline end
 #' @param minymd Integer Year Month Day of timeline start
 #' @param maxymd Integer Year Month Day of timeline end
 #' @param mineqmag Numeric minimum magnitude of earthquakes to be ploted
+#' @param toteqlbls Numeric total number of largest earthquakes to be labeled
 #'
 #' @return Visualization in form of gemetric objects plotted on 2d chart
 #' @export
