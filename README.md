@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/akbarpunjwani/msdr-capstone-eqvis.svg?branch=main)](https://travis-ci.com/akbarpunjwani/msdr-capstone-eqvis)
+status](https://travis-ci.org/akbarpunjwani/msdr-capstone-eqvis.svg?branch=main)](https://travis-ci.org/akbarpunjwani/msdr-capstone-eqvis)
 <!-- badges: end -->
 
 The goal of EQVIS is to provide EarthQuake VISualization tools in order
@@ -52,13 +52,13 @@ Examples: *eqvis::eq\_load\_data()*
 ``` r
 eqvis::eq_load_data()
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: `tbl_df()` is deprecated as of dplyr 1.0.0.
 #> Please use `tibble::as_tibble()` instead.
@@ -99,13 +99,13 @@ eqvis::eq_load_data()
 ``` r
 eqvis::eq_location_clean()
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: Expected 4 pieces. Missing pieces filled with `NA` in 5888 rows [1, 2,
 #> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].
@@ -145,13 +145,13 @@ passed)
 ``` r
 eqvis::eq_clean_data()
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: Expected 4 pieces. Missing pieces filled with `NA` in 5888 rows [1, 2,
 #> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].
@@ -192,13 +192,13 @@ Examples: *eqvis::eq\_timeline(countries = c(‘TURKEY’,‘CHINA’))*
 ``` r
 grid::grid.draw(eqvis::eq_timeline(countries = c('TURKEY','CHINA')))
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: Expected 4 pieces. Missing pieces filled with `NA` in 5888 rows [1, 2,
 #> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].
@@ -221,13 +221,13 @@ c(‘TURKEY’,‘CHINA’))*
 ``` r
 grid::grid.draw(eqvis::eq_timeline_and_labels(countries = c('TURKEY','CHINA')))
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: Expected 4 pieces. Missing pieces filled with `NA` in 5888 rows [1, 2,
 #> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].
@@ -249,13 +249,13 @@ Examples: *eqvis::eq\_map\_with\_datelabels()*
 ``` r
 eqvis::eq_map_with_datelabels()
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: Expected 4 pieces. Missing pieces filled with `NA` in 5888 rows [1, 2,
 #> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].
@@ -263,8 +263,8 @@ eqvis::eq_map_with_datelabels()
 #> PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
 ```
 
-<div id="htmlwidget-695863d7c40e07d19476" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-695863d7c40e07d19476">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[18.194,32.319,16.87,18.77,17.488,17.302,32.456,32.437,32.297,16.396,17.844,16.493,16.917,17.552,17.385,17.842],[-95.908,-115.322,-100.113,-104.104,-101.303,-100.198,-115.315,-115.165,-115.278,-97.782,-99.963,-98.231,-99.381,-100.816,-100.656,-95.524],[5.9,5.5,5.3,7.5,6.1,6,5.1,5.9,7.2,6.2,6.4,7.4,6.2,7.2,6.4,6.3],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":2,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.1},null,null,["2002-01-30","2002-02-22","2002-09-25","2003-01-22","2004-01-01","2007-04-13","2008-02-09","2009-12-30","2010-04-04","2010-06-30","2011-12-11","2012-03-20","2013-08-21","2014-04-18","2014-05-08","2014-07-29"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[16.396,32.456],"lng":[-115.322,-95.524]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a38ae52772cc98734ac7" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a38ae52772cc98734ac7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[18.194,32.319,16.87,18.77,17.488,17.302,32.456,32.437,32.297,16.396,17.844,16.493,16.917,17.552,17.385,17.842],[-95.908,-115.322,-100.113,-104.104,-101.303,-100.198,-115.315,-115.165,-115.278,-97.782,-99.963,-98.231,-99.381,-100.816,-100.656,-95.524],[5.9,5.5,5.3,7.5,6.1,6,5.1,5.9,7.2,6.2,6.4,7.4,6.2,7.2,6.4,6.3],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":2,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.1},null,null,["2002-01-30","2002-02-22","2002-09-25","2003-01-22","2004-01-01","2007-04-13","2008-02-09","2009-12-30","2010-04-04","2010-06-30","2011-12-11","2012-03-20","2013-08-21","2014-04-18","2014-05-08","2014-07-29"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[16.396,32.456],"lng":[-115.322,-95.524]}},"evals":[],"jsHooks":[]}</script>
 
 **eqvis::eq\_map\_with\_htmllabels()**
 
@@ -277,18 +277,18 @@ Examples: *eqvis::eq\_map\_with\_htmllabels()*
 ``` r
 eqvis::eq_map_with_htmllabels()
 #> Warning: 5257 parsing failures.
-#>  row        col           expected actual                                                                                                             file
-#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e58dda59ab/eqvis/extdata/earthquakes.tsv.gz'
-#> .... .......... .................. ...... ................................................................................................................
+#>  row        col           expected actual                                                                                                              file
+#> 1064 SECOND     1/0/T/F/TRUE/FALSE    5.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1243 SECOND     1/0/T/F/TRUE/FALSE   35.0 'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1482 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.2   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1483 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7     'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> 1484 EQ_MAG_MFA 1/0/T/F/TRUE/FALSE  7.1   'C:/Users/Akbar.Punjwani/AppData/Local/Temp/RtmpgtYguH/temp_libpath4e5879552d70/eqvis/extdata/earthquakes.tsv.gz'
+#> .... .......... .................. ...... .................................................................................................................
 #> See problems(...) for more details.
 #> Warning: Expected 4 pieces. Missing pieces filled with `NA` in 5888 rows [1, 2,
 #> 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ...].
 #> Warning: 18 failed to parse.
 ```
 
-<div id="htmlwidget-891bb35525afac223a5b" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-891bb35525afac223a5b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[18.194,32.319,16.87,18.77,17.488,17.302,32.456,32.437,32.297,16.396,17.844,16.493,16.917,17.552,17.385,17.842],[-95.908,-115.322,-100.113,-104.104,-101.303,-100.198,-115.315,-115.165,-115.278,-97.782,-99.963,-98.231,-99.381,-100.816,-100.656,-95.524],[5.9,5.5,5.3,7.5,6.1,6,5.1,5.9,7.2,6.2,6.4,7.4,6.2,7.2,6.4,6.3],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":2,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.1},null,null,["<b>Location: <\/b>Veracruz:  San Andres Tuxtla, Tuxtepec:<br/><b>Magnitude: <\/b>5.9<br/>","<b>Location: <\/b>Mexicali, Baja California<br/><b>Magnitude: <\/b>5.5<br/>","<b>Location: <\/b>Acapulco<br/><b>Magnitude: <\/b>5.3<br/>","<b>Location: <\/b>Villa De Alvarez, Colima, Tecoman, Jalisco<br/><b>Magnitude: <\/b>7.5<br/><b>Total deaths: <\/b>29<br/>","<b>Location: <\/b>Guerrero, Mexico City<br/><b>Magnitude: <\/b>6.1<br/>","<b>Location: <\/b>Guerrero, Atoyac<br/><b>Magnitude: <\/b>6<br/>","<b>Location: <\/b>Baja California<br/><b>Magnitude: <\/b>5.1<br/>","<b>Location: <\/b>Mexicali<br/><b>Magnitude: <\/b>5.9<br/>","<b>Location: <\/b>Baja California<br/><b>Magnitude: <\/b>7.2<br/><b>Total deaths: <\/b>2<br/>","<b>Location: <\/b>San Andres Huaxpaltepec<br/><b>Magnitude: <\/b>6.2<br/><b>Total deaths: <\/b>1<br/>","<b>Location: <\/b>Guerrero<br/><b>Magnitude: <\/b>6.4<br/><b>Total deaths: <\/b>2<br/>","<b>Location: <\/b>Guerrero, Oaxaca<br/><b>Magnitude: <\/b>7.4<br/><b>Total deaths: <\/b>2<br/>","<b>Location: <\/b>Acapulco<br/><b>Magnitude: <\/b>6.2<br/>","<b>Location: <\/b>Guerrero; Mexico City<br/><b>Magnitude: <\/b>7.2<br/>","<b>Location: <\/b>Tecpan<br/><b>Magnitude: <\/b>6.4<br/>","<b>Location: <\/b>Oaxaca<br/><b>Magnitude: <\/b>6.3<br/><b>Total deaths: <\/b>1<br/>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[16.396,32.456],"lng":[-115.322,-95.524]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5009c94af08c8a52c234" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5009c94af08c8a52c234">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[18.194,32.319,16.87,18.77,17.488,17.302,32.456,32.437,32.297,16.396,17.844,16.493,16.917,17.552,17.385,17.842],[-95.908,-115.322,-100.113,-104.104,-101.303,-100.198,-115.315,-115.165,-115.278,-97.782,-99.963,-98.231,-99.381,-100.816,-100.656,-95.524],[5.9,5.5,5.3,7.5,6.1,6,5.1,5.9,7.2,6.2,6.4,7.4,6.2,7.2,6.4,6.3],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":2,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.1},null,null,["<b>Location: <\/b>Veracruz:  San Andres Tuxtla, Tuxtepec:<br/><b>Magnitude: <\/b>5.9<br/>","<b>Location: <\/b>Mexicali, Baja California<br/><b>Magnitude: <\/b>5.5<br/>","<b>Location: <\/b>Acapulco<br/><b>Magnitude: <\/b>5.3<br/>","<b>Location: <\/b>Villa De Alvarez, Colima, Tecoman, Jalisco<br/><b>Magnitude: <\/b>7.5<br/><b>Total deaths: <\/b>29<br/>","<b>Location: <\/b>Guerrero, Mexico City<br/><b>Magnitude: <\/b>6.1<br/>","<b>Location: <\/b>Guerrero, Atoyac<br/><b>Magnitude: <\/b>6<br/>","<b>Location: <\/b>Baja California<br/><b>Magnitude: <\/b>5.1<br/>","<b>Location: <\/b>Mexicali<br/><b>Magnitude: <\/b>5.9<br/>","<b>Location: <\/b>Baja California<br/><b>Magnitude: <\/b>7.2<br/><b>Total deaths: <\/b>2<br/>","<b>Location: <\/b>San Andres Huaxpaltepec<br/><b>Magnitude: <\/b>6.2<br/><b>Total deaths: <\/b>1<br/>","<b>Location: <\/b>Guerrero<br/><b>Magnitude: <\/b>6.4<br/><b>Total deaths: <\/b>2<br/>","<b>Location: <\/b>Guerrero, Oaxaca<br/><b>Magnitude: <\/b>7.4<br/><b>Total deaths: <\/b>2<br/>","<b>Location: <\/b>Acapulco<br/><b>Magnitude: <\/b>6.2<br/>","<b>Location: <\/b>Guerrero; Mexico City<br/><b>Magnitude: <\/b>7.2<br/>","<b>Location: <\/b>Tecpan<br/><b>Magnitude: <\/b>6.4<br/>","<b>Location: <\/b>Oaxaca<br/><b>Magnitude: <\/b>6.3<br/><b>Total deaths: <\/b>1<br/>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[16.396,32.456],"lng":[-115.322,-95.524]}},"evals":[],"jsHooks":[]}</script>

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 # eqvis
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/akbarpunjwani/msdr-capstone-eqvis.svg?branch=main)](https://travis-ci.com/akbarpunjwani/msdr-capstone-eqvis)
+[![Travis build status](https://travis-ci.org/akbarpunjwani/msdr-capstone-eqvis.svg?branch=main)](https://travis-ci.org/akbarpunjwani/msdr-capstone-eqvis)
 <!-- badges: end -->
 
 The goal of EQVIS is to provide EarthQuake VISualization tools in order to analyze the earthquakes occurrences as reported at NOAA sample data set as available for public access.
