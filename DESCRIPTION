@@ -25,7 +25,7 @@ Description: It provides visualization tools as Geom Extensions & Mappings.
     Earthquakes visualizations over maps showing its epicenter highlights the 
     locations and other important data in its popup. All these 3 tools are part of 
     this package.
-License: GPL-3
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/akbarpunjwani/msdr-capstone-eqvis
